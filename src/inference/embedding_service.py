@@ -1,8 +1,8 @@
 import torch
 import numpy as np
 from transformers import AutoTokenizer,AutoModel
-tokenizer=AutoTokenizer.from_pretrained("ProsusAI/finbert",local_files_only=True)
-model=AutoModel.from_pretrained("ProsusAI/finbert",local_files_only=True)
+tokenizer=AutoTokenizer.from_pretrained("ProsusAI/finbert",local_files_only=False)
+model=AutoModel.from_pretrained("ProsusAI/finbert",local_files_only=False)
 model.eval()
 def encode_headlines(headlines):
     clean_headlines=[h.strip() for h in headlines if isinstance(h,str) and h.strip()]

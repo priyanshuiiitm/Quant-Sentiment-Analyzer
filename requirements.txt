@@ -1,0 +1,12 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+fastapi
+uvicorn
+numpy
+pandas
+transformers
+yfinance
+ta
+certifi
+feedparser
+requests
+torch==2.10.0+cpu
